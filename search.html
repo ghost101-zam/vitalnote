@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search — VitalNote</title>
+<meta name="description" content="Search VitalNote's health and medical articles.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.vitalnote.example/search.html">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <div class="page-title-block container">
+    <div class="eyebrow">Search</div>
+    <h1>Search VitalNote</h1>
+    <form id="page-search-form" style="max-width:520px;margin-top:18px;display:flex;gap:10px;">
+      <label class="visually-hidden" for="page-search-input">Search articles</label>
+      <input type="search" id="page-search-input" placeholder="Search articles, topics, symptoms…"
+             style="flex:1;padding:13px 16px;border:1px solid var(--line);border-radius:var(--radius-s);background:var(--paper-raised);font-size:1rem;">
+      <button type="submit" class="btn">Search</button>
+    </form>
+  </div>
+
+  <section class="page-section container">
+    <p id="search-summary" style="color:var(--muted);margin-bottom:20px;"></p>
+    <div class="card-grid cols-3" id="search-results-grid"></div>
+  </section>
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+<script>
+  renderHeader(null);
+  renderFooter();
+
+  function runSearch(q) {
+    const summary = document.getElementById("search-summary");
+    const grid = document.getElementById("search-results-grid");
+    if (!q || !q.trim()) {
+      summary.textContent = "Enter a search term above to find articles.";
+      grid.innerHTML = "";
+      return;
+    }
+    const results = SiteData.search(q);
+    summary.textContent = `${results.length} result${results.length === 1 ? "" : "s"} for "${q}"`;
+    grid.innerHTML = "";
+    if (results.length) Render.mountCards("search-results-grid", results);
+  }
+
+  window.pageInit = function (SiteData) {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q") || "";
+    document.getElementById("page-search-input").value = q;
+    document.title = (q ? `Search: ${q}` : "Search") + " — VitalNote";
+    runSearch(q);
+
+    document.getElementById("page-search-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const newQ = document.getElementById("page-search-input").value;
+      const url = new URL(window.location.href);
+      url.searchParams.set("q", newQ);
+      window.history.pushState({}, "", url);
+      document.title = (newQ ? `Search: ${newQ}` : "Search") + " — VitalNote";
+      runSearch(newQ);
+    });
+  };
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Category — VitalNote</title>
+<meta name="description" id="meta-description" content="Browse VitalNote articles by category.">
+<link rel="canonical" id="canonical-link" href="https://www.vitalnote.example/category.html">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" id="og-title" content="VitalNote">
+<meta property="og:description" id="og-description" content="">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb" id="breadcrumbs"></nav>
+  </div>
+
+  <div class="page-title-block container" id="category-title-block">
+    <p style="color:var(--muted);padding:40px 0;">Loading category…</p>
+  </div>
+
+  <section class="page-section container">
+    <div class="split-layout">
+      <div>
+        <div class="card-grid cols-2" id="category-articles"></div>
+        <p id="category-empty" style="display:none;color:var(--muted);padding:20px 0;">No articles have been published in this category yet — check back soon.</p>
+      </div>
+      <div>
+        <div class="sidebar-block">
+          <h3>Other Categories</h3>
+          <ul id="other-categories" style="display:flex;flex-direction:column;gap:10px;"></ul>
+        </div>
+        <div class="ad-slot sidebar-ad">Sidebar ad placeholder — 300×250</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const catSlug = params.get("cat");
+  renderHeader(catSlug);
+  renderFooter();
+
+  window.pageInit = function (SiteData) {
+    const cat = SiteData.getCategory(catSlug);
+    const titleBlock = document.getElementById("category-title-block");
+
+    if (!cat) {
+      titleBlock.innerHTML = `<h1>Category not found</h1><p>That category doesn't exist. <a href="index.html">Return home</a>.</p>`;
+      return;
+    }
+
+    document.title = cat.name + " — VitalNote";
+    document.getElementById("meta-description").setAttribute("content", cat.description);
+    document.getElementById("canonical-link").setAttribute("href", "https://www.vitalnote.example/category.html?cat=" + cat.slug);
+    document.getElementById("og-title").setAttribute("content", cat.name + " — VitalNote");
+    document.getElementById("og-description").setAttribute("content", cat.description);
+
+    document.getElementById("breadcrumbs").innerHTML = `
+      <a href="index.html">Home</a><span class="sep">/</span><span>${cat.name}</span>`;
+
+    const articles = SiteData.getArticlesByCategory(cat.slug);
+
+    titleBlock.innerHTML = `
+      <div class="eyebrow" style="--cat-color:${cat.color}">Category</div>
+      <h1>${cat.name}</h1>
+      <p style="color:var(--muted);max-width:640px;margin-top:8px;">${cat.description}</p>
+      <p class="updated-note">${articles.length} article${articles.length === 1 ? "" : "s"} published</p>
+    `;
+
+    if (articles.length) {
+      Render.mountCards("category-articles", articles);
+    } else {
+      document.getElementById("category-empty").style.display = "block";
+    }
+
+    const others = SiteData.data.categories.filter(c => c.slug !== cat.slug);
+    document.getElementById("other-categories").innerHTML = others.map(c => `
+      <li><a href="category.html?cat=${c.slug}" class="eyebrow" style="--cat-color:${c.color}">${c.name}</a></li>
+    `).join("");
+  };
+</script>
+</body>
+</html>

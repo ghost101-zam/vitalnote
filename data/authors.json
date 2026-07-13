@@ -1,0 +1,36 @@
+{
+  "authors": [
+    {
+      "slug": "priya-nair",
+      "name": "Priya Nair",
+      "title": "Registered Dietitian & Health Writer",
+      "avatar": "images/authors/priya-nair.svg",
+      "bio": "Priya writes on nutrition, metabolic health, and preventive care. She trained as a registered dietitian and spent six years in clinical practice before moving into health journalism, and she still sees a small number of patients each month.",
+      "articleCount": 5
+    },
+    {
+      "slug": "marcus-webb",
+      "name": "Marcus Webb",
+      "title": "Health & Fitness Correspondent",
+      "avatar": "images/authors/marcus-webb.svg",
+      "bio": "Marcus covers fitness science, exercise physiology, and men's health. His reporting focuses on separating well-supported findings from fitness-industry hype, drawing on a background in sports science research.",
+      "articleCount": 4
+    },
+    {
+      "slug": "sara-jensen",
+      "name": "Dr. Sara Jensen",
+      "title": "Physician & Contributing Editor",
+      "avatar": "images/authors/sara-jensen.svg",
+      "bio": "Sara is a practicing family physician and contributing medical editor. She reviews clinical accuracy across the site and writes on women's health, mental health, and preventive screening.",
+      "articleCount": 4
+    },
+    {
+      "slug": "james-okoro",
+      "name": "James Okoro",
+      "title": "Public Health Reporter",
+      "avatar": "images/authors/james-okoro.svg",
+      "bio": "James reports on public health policy, infectious disease, and health systems. He previously worked in epidemiological surveillance before moving into full-time health journalism.",
+      "articleCount": 3
+    }
+  ]
+}

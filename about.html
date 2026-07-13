@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — VitalNote</title>
+<meta name="description" content="VitalNote is an independent health publication covering nutrition, fitness, mental health and medical research with clear, evidence-informed reporting.">
+<link rel="canonical" href="https://www.vitalnote.example/about.html">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>About</span></nav>
+  </div>
+
+  <div class="page-title-block container">
+    <div class="eyebrow">About VitalNote</div>
+    <h1>Health reporting you can actually use</h1>
+  </div>
+
+  <section class="page-section container">
+    <div class="prose">
+      <p>VitalNote is an independent health and medical news publication. We cover nutrition, fitness, mental health, chronic disease, medical research and public health, with a simple standard for every story: is this actually useful to the person reading it, and is it accurately sourced?</p>
+      <p>We are not a substitute for medical advice, and we say so clearly on every article. What we aim to do instead is translate research and clinical guidance into something a reader can understand and act on, without the exaggeration that so much health content online relies on.</p>
+
+      <h2>Editorial standards</h2>
+      <ul>
+        <li>Every article links to the studies or guidelines it draws on in a references section.</li>
+        <li>We distinguish clearly between findings that are well-established and findings that are preliminary or contested.</li>
+        <li>Articles are reviewed for clinical accuracy before publication.</li>
+        <li>We correct errors publicly and promptly when they're identified.</li>
+        <li>We do not accept payment in exchange for favorable coverage of any product, supplement, or treatment.</li>
+      </ul>
+
+      <h2>How we're funded</h2>
+      <p>VitalNote is supported by display advertising. Advertising placements are clearly marked and do not influence our editorial coverage or recommendations.</p>
+    </div>
+  </section>
+
+  <section class="page-section container" id="authors">
+    <div class="section-heading"><h2>Our Team</h2></div>
+    <div class="card-grid cols-3" id="author-grid"></div>
+  </section>
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+<script>
+  renderHeader(null);
+  renderFooter();
+
+  window.pageInit = function (SiteData) {
+    const grid = document.getElementById("author-grid");
+    grid.innerHTML = SiteData.data.authors.map(a => `
+      <article class="article-card reveal">
+        <a class="thumb" href="author.html?author=${a.slug}" style="aspect-ratio:1;max-width:120px;border-radius:50%;">
+          <img src="${a.avatar}" alt="${Render.escapeAttr(a.name)}" loading="lazy">
+        </a>
+        <h3 style="margin-top:14px;"><a href="author.html?author=${a.slug}">${a.name}</a></h3>
+        <p class="card-desc">${a.title}</p>
+      </article>
+    `).join("");
+    Motion.observe(grid.querySelectorAll(".reveal"));
+  };
+</script>
+</body>
+</html>

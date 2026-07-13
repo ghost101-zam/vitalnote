@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VitalNote — Health News &amp; Medicine, Explained Clearly</title>
+<meta name="description" content="VitalNote covers nutrition, fitness, mental health and medical research with clear, evidence-informed reporting. New health articles daily.">
+<meta name="keywords" content="health news, nutrition, fitness, mental health, heart health, diabetes, medical research">
+<link rel="canonical" href="https://www.vitalnote.example/index.html">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="VitalNote — Health News & Medicine, Explained Clearly">
+<meta property="og:description" content="Nutrition, fitness, mental health and medical research, reported clearly and sourced honestly.">
+<meta property="og:image" content="assets/og-image.svg">
+<meta property="og:url" content="https://www.vitalnote.example/index.html">
+<meta property="og:site_name" content="VitalNote">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VitalNote — Health News & Medicine, Explained Clearly">
+<meta name="twitter:description" content="Nutrition, fitness, mental health and medical research, reported clearly and sourced honestly.">
+<meta name="twitter:image" content="assets/og-image.svg">
+
+<link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "VitalNote",
+  "url": "https://www.vitalnote.example/",
+  "logo": "https://www.vitalnote.example/assets/favicon.svg",
+  "description": "Health news and education covering nutrition, fitness, mental health and medical research."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "VitalNote",
+  "url": "https://www.vitalnote.example/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.vitalnote.example/search.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+
+  <section class="hero container">
+    <div class="ad-slot header-banner">Header banner ad placeholder — 728×90</div>
+    <div class="hero-grid" id="hero-grid">
+      <!-- filled by JS: featured story -->
+    </div>
+  </section>
+
+  <div class="container">
+    <svg class="vitals-line vitals-divider" viewBox="0 0 300 22" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,11 L60,11 L72,11 L80,2 L90,20 L100,4 L108,11 L120,11 L180,11 L192,11 L200,2 L210,20 L220,4 L228,11 L300,11" />
+    </svg>
+  </div>
+
+  <section class="page-section container">
+    <div class="section-heading">
+      <h2>Latest Articles</h2>
+      <a class="see-all" href="search.html">All articles →</a>
+    </div>
+    <div class="card-grid" id="latest-grid"></div>
+  </section>
+
+  <section class="page-section tight container">
+    <div class="split-layout">
+      <div>
+        <div class="section-heading">
+          <h2>Trending Now</h2>
+        </div>
+        <div id="trending-list"></div>
+      </div>
+      <div>
+        <div class="sidebar-block">
+          <h3>Popular This Week</h3>
+          <div id="popular-list"></div>
+        </div>
+        <div class="ad-slot sidebar-ad">Sidebar ad placeholder — 300×250</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section container">
+    <div class="section-heading">
+      <h2>Browse by Category</h2>
+    </div>
+    <div class="category-grid" id="category-grid"></div>
+  </section>
+
+  <section class="page-section container">
+    <div class="section-heading">
+      <h2>Editor's Picks</h2>
+    </div>
+    <div class="card-grid cols-3" id="editors-picks-grid"></div>
+  </section>
+
+  <section class="page-section container">
+    <div class="newsletter">
+      <div>
+        <div class="eyebrow" style="color:#33B39C">Newsletter</div>
+        <h2>The Week in Health, every Friday</h2>
+        <p>One email. The studies worth knowing about, explained in plain language — no noise, unsubscribe any time.</p>
+      </div>
+      <div>
+        <form class="newsletter-form" aria-label="Newsletter signup">
+          <label for="newsletter-email" class="visually-hidden">Email address</label>
+          <input type="email" id="newsletter-email" placeholder="you@example.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="form-status" id="newsletter-status"></p>
+        <p class="newsletter-note">No spam. We never share your email. Unsubscribe any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section container">
+    <div class="section-heading">
+      <h2>Recommended Reading</h2>
+    </div>
+    <div class="card-grid cols-3" id="recommended-grid"></div>
+  </section>
+
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+<script>
+  renderHeader("home");
+  renderFooter();
+
+  window.pageInit = function (SiteData) {
+    const all = SiteData.data.articles;
+    const featured = SiteData.getArticlesByTag("breaking")[0] || all[0];
+    const sideStories = all.filter(a => a.id !== featured.id).slice(0, 3);
+
+    document.getElementById("hero-grid").innerHTML = `
+      <div class="hero-main">
+        <span class="hero-badge">Breaking</span>
+        <a class="hero-img-link" href="article.html?slug=${featured.slug}">
+          <img src="${featured.image}" alt="${Render.escapeAttr(featured.title)}" width="800" height="500"
+               onerror="this.onerror=null;this.src='images/placeholder.svg';">
+        </a>
+        <div class="hero-text">
+          ${Render.eyebrow(featured)}
+          <h1><a href="article.html?slug=${featured.slug}">${featured.title}</a></h1>
+          <p class="hero-dek">${featured.description}</p>
+          <div class="card-meta hero-meta">
+            <span>${SiteData.formatDate(featured.date)}</span><span>·</span><span>${featured.readingTime} min read</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="hero-side-title">Also in the news</div>
+        <div class="side-story-list" id="hero-side-list"></div>
+      </div>
+    `;
+    Render.mountSideStories("hero-side-list", sideStories);
+
+    Render.mountCards("latest-grid", all.slice(0, 8));
+
+    const trending = SiteData.getArticlesByTag("trending");
+    Render.mountList("trending-list", (trending.length ? trending : all).slice(0, 5), true);
+
+    const popular = SiteData.getArticlesByTag("popular");
+    Render.mountList("popular-list", (popular.length ? popular : all.slice().reverse()).slice(0, 5), false);
+
+    Render.mountCategoryGrid("category-grid");
+
+    const picks = SiteData.getArticlesByTag("editors-pick");
+    Render.mountCards("editors-picks-grid", (picks.length ? picks : all).slice(0, 3));
+
+    Render.mountCards("recommended-grid", all.slice(8, 11));
+  };
+</script>
+</body>
+</html>

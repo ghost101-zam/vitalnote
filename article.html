@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Article — VitalNote</title>
+<meta name="description" id="meta-description" content="Health article on VitalNote.">
+<meta name="keywords" id="meta-keywords" content="">
+<link rel="canonical" id="canonical-link" href="https://www.vitalnote.example/article.html">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<meta property="og:type" content="article">
+<meta property="og:title" id="og-title" content="VitalNote">
+<meta property="og:description" id="og-description" content="">
+<meta property="og:image" id="og-image" content="assets/og-image.svg">
+<meta property="og:url" id="og-url" content="https://www.vitalnote.example/article.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" id="tw-title" content="VitalNote">
+<meta name="twitter:description" id="tw-description" content="">
+<meta name="twitter:image" id="tw-image" content="assets/og-image.svg">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb" id="breadcrumbs"></nav>
+  </div>
+
+  <article class="container" id="article-root">
+    <p class="container" style="padding-top:60px;color:var(--muted);">Loading article…</p>
+  </article>
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+<script>
+  renderHeader(null);
+  renderFooter();
+
+  function slugifyHeading(text) {
+    return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  }
+
+  function renderBody(content) {
+    return content.map(block => {
+      switch (block.type) {
+        case "heading":
+          return `<h2 id="${slugifyHeading(block.text)}">${block.text}</h2>`;
+        case "paragraph":
+          return `<p>${block.text}</p>`;
+        case "quote":
+          return `<blockquote class="pull-quote">${block.text}</blockquote>`;
+        case "list":
+          return `<ul>${block.items.map(i => `<li>${i}</li>`).join("")}</ul>`;
+        case "image":
+          return `<figure class="article-featured-img"><img src="${block.src}" alt="${Render.escapeAttr(block.alt || "")}" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg';">${block.caption ? `<figcaption class="img-caption">${block.caption}</figcaption>` : ""}</figure>`;
+        default:
+          return "";
+      }
+    }).join("");
+  }
+
+  function renderTOC(content) {
+    const headings = content.filter(b => b.type === "heading");
+    if (!headings.length) return "";
+    return `
+      <nav class="toc" aria-label="Table of contents">
+        <div class="toc-title">In this article</div>
+        <ol>
+          ${headings.map(h => `<li><a href="#${slugifyHeading(h.text)}">${h.text}</a></li>`).join("")}
+        </ol>
+      </nav>`;
+  }
+
+  window.pageInit = function (SiteData) {
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get("slug");
+    const article = slug ? SiteData.getArticleBySlug(slug) : null;
+    const root = document.getElementById("article-root");
+
+    if (!article) {
+      root.innerHTML = `
+        <div class="not-found">
+          <div class="code">404</div>
+          <h1>We couldn't find that article</h1>
+          <p>It may have been moved or the link is incorrect.</p>
+          <a class="btn" href="index.html">Back to homepage</a>
+        </div>`;
+      return;
+    }
+
+    const author = SiteData.getAuthor(article.author);
+    const cat = SiteData.getCategory(article.category);
+    const related = SiteData.getRelated(article, 4);
+    const { prev, next } = SiteData.getAdjacent(article);
+
+    // SEO / meta
+    document.title = article.title + " — VitalNote";
+    document.getElementById("meta-description").setAttribute("content", article.description);
+    document.getElementById("meta-keywords").setAttribute("content", (article.keywords || []).join(", "));
+    document.getElementById("canonical-link").setAttribute("href", "https://www.vitalnote.example/article.html?slug=" + article.slug);
+    document.getElementById("og-title").setAttribute("content", article.title);
+    document.getElementById("og-description").setAttribute("content", article.description);
+    document.getElementById("og-url").setAttribute("content", "https://www.vitalnote.example/article.html?slug=" + article.slug);
+    document.getElementById("tw-title").setAttribute("content", article.title);
+    document.getElementById("tw-description").setAttribute("content", article.description);
+
+    // Structured data (Article schema)
+    const ld = document.createElement("script");
+    ld.type = "application/ld+json";
+    ld.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "headline": article.title,
+      "description": article.description,
+      "datePublished": article.date,
+      "author": { "@type": "Person", "name": author ? author.name : article.author },
+      "publisher": { "@type": "Organization", "name": "VitalNote" },
+      "image": "https://www.vitalnote.example/" + article.image
+    });
+    document.head.appendChild(ld);
+
+    document.getElementById("breadcrumbs").innerHTML = `
+      <a href="index.html">Home</a><span class="sep">/</span>
+      <a href="category.html?cat=${article.category}">${SiteData.categoryName(article.category)}</a><span class="sep">/</span>
+      <span>${article.title}</span>`;
+
+    const shareUrl = encodeURIComponent("https://www.vitalnote.example/article.html?slug=" + article.slug);
+    const shareText = encodeURIComponent(article.title);
+
+    root.innerHTML = `
+      <header class="article-header">
+        ${Render.eyebrow(article)}
+        <h1>${article.title}</h1>
+        <p class="article-dek">${article.description}</p>
+        <div class="article-byline">
+          <img src="${author ? author.avatar : 'images/placeholder.svg'}" alt="${author ? Render.escapeAttr(author.name) : ''}">
+          <div>
+            <div class="by-name"><a href="author.html?author=${article.author}">${author ? author.name : article.author}</a></div>
+            <div class="by-meta">${SiteData.formatDate(article.date)} · ${article.readingTime} min read</div>
+          </div>
+          <div class="share-row" aria-label="Share this article">
+            <a class="icon-btn" target="_blank" rel="noopener" aria-label="Share on X" href="https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-6.6L4.4 22H1.2l8.1-9.3L1 2h7.1l4.9 6.1L18.9 2Z"/></svg>
+            </a>
+            <a class="icon-btn" target="_blank" rel="noopener" aria-label="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.6V3.7C15.9 3.6 15 3.5 14 3.5c-2.6 0-4.3 1.6-4.3 4.4v2h-2.7v3.1h2.7v8h3.8Z"/></svg>
+            </a>
+            <a class="icon-btn" target="_blank" rel="noopener" aria-label="Share on LinkedIn" href="https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V21h3.38V8.5ZM5.25 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM21 21v-6.9c0-3.3-1.76-4.83-4.1-4.83-1.9 0-2.75 1.05-3.22 1.78V8.5h-3.38V21h3.38v-6.4c0-1.7 1.02-2.5 2.02-2.5 1.1 0 1.94.72 1.94 2.47V21H21Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <figure class="article-featured-img">
+        <img src="${article.image}" alt="${Render.escapeAttr(article.title)}" width="800" height="500"
+             onerror="this.onerror=null;this.src='images/placeholder.svg';">
+      </figure>
+      ${article.imageCaption ? `<figcaption class="img-caption">${article.imageCaption}</figcaption>` : ""}
+
+      <div class="article-body-wrap">
+        ${renderTOC(article.content)}
+        <div class="article-body">
+          ${renderBody(article.content)}
+
+          <div class="ad-slot in-article">In-article ad placeholder — 336×280</div>
+
+          <div class="article-refs">
+            <h3>References &amp; Sources</h3>
+            <ol>${(article.references || []).map(r => `<li>${r}</li>`).join("")}</ol>
+          </div>
+
+          <div class="tag-row">
+            <a class="tag-pill" href="category.html?cat=${article.category}">${SiteData.categoryName(article.category)}</a>
+            ${(article.tags || []).map(t => `<span class="tag-pill">${t.replace("-", " ")}</span>`).join("")}
+          </div>
+
+          ${prev || next ? `
+          <div class="prev-next">
+            ${prev ? `<a class="pn-card" href="article.html?slug=${prev.slug}"><div class="pn-label">← Previous</div><h4>${prev.title}</h4></a>` : "<span></span>"}
+            ${next ? `<a class="pn-card next-card" href="article.html?slug=${next.slug}"><div class="pn-label">Next →</div><h4>${next.title}</h4></a>` : "<span></span>"}
+          </div>` : ""}
+
+          <section class="comments-section" aria-label="Comments">
+            <h3>Discussion</h3>
+            <p style="font-size:0.85rem;color:var(--muted);margin:6px 0 20px;">Comments are for discussion purposes and are not reviewed by our medical team. This is a front-end preview only.</p>
+            <form class="comment-form">
+              <label class="visually-hidden" for="comment-name">Your name</label>
+              <input type="text" id="comment-name" placeholder="Your name (optional)">
+              <label class="visually-hidden" for="comment-text">Your comment</label>
+              <textarea id="comment-text" placeholder="Share a thought or question…" required></textarea>
+              <div><button type="submit" class="btn">Post comment</button></div>
+            </form>
+            <div id="comment-list">
+              <div class="comment-item">
+                <div class="avatar">RT</div>
+                <div>
+                  <span class="c-name">Reader</span><span class="c-date">2 days ago</span>
+                  <p>Really useful breakdown — appreciated the references at the end.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    `;
+
+    if (related.length) {
+      const relatedSection = document.createElement("section");
+      relatedSection.className = "page-section container";
+      relatedSection.innerHTML = `
+        <div class="section-heading"><h2>Related Articles</h2></div>
+        <div class="card-grid cols-3" id="related-grid"></div>`;
+      document.getElementById("article-root").after(relatedSection);
+      Render.mountCards("related-grid", related);
+    }
+  };
+</script>
+</body>
+</html>

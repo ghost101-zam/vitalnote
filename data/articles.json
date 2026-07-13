@@ -1,0 +1,538 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Why Your Evening Walk Matters More Than Your Morning One",
+      "slug": "evening-walk-blood-sugar",
+      "author": "priya-nair",
+      "date": "2026-07-08",
+      "category": "diabetes",
+      "tags": ["breaking", "trending"],
+      "description": "New observational research suggests a short walk after dinner does more to flatten blood sugar spikes than the same walk taken before breakfast.",
+      "keywords": ["blood sugar", "walking after meals", "diabetes prevention", "post-meal glucose", "insulin sensitivity"],
+      "image": "images/articles/evening-walk.svg",
+      "imageCaption": "A ten to fifteen minute walk after eating is enough to blunt the glucose rise most meals cause.",
+      "readingTime": 6,
+      "content": [
+        {"type": "paragraph", "text": "For years, health advice has treated a walk as a walk, something to fit in whenever the day allows. A run of recent observational studies is complicating that picture, pointing to the minutes right after a meal as an unusually effective window for movement."},
+        {"type": "heading", "text": "The post-meal spike"},
+        {"type": "paragraph", "text": "When you eat, especially a meal with refined carbohydrates, blood glucose rises as the digestive system breaks food down into sugar and releases it into the bloodstream. In someone with normal insulin function, that spike is brought back down within a couple of hours. In someone with insulin resistance or prediabetes, the peak is higher and the return to baseline slower, and it's this repeated peak-and-slow-return pattern that researchers increasingly link to long-term metabolic strain."},
+        {"type": "quote", "text": "The muscle is doing something insulin alone struggles to do quickly: pulling glucose out of the blood without waiting for a hormonal cascade."},
+        {"type": "paragraph", "text": "Walking engages large muscle groups in the legs, and contracting muscle takes up glucose from the bloodstream through a pathway that does not depend entirely on insulin. That means a walk taken while glucose is actively rising, rather than hours later, can blunt the height of the spike rather than just helping the body recover from it afterward."},
+        {"type": "heading", "text": "What the studies actually looked at"},
+        {"type": "paragraph", "text": "Several small trials have compared identical meals followed by either sitting, a walk immediately after eating, or a walk taken at a different time of day. The consistent finding across this body of work is that post-meal walks of even modest length and pace reduce the size of the glucose spike compared with sitting, and tend to outperform a walk of the same length taken before the meal or well after digestion has finished."},
+        {"type": "paragraph", "text": "The effect does not require intense exercise. A relaxed pace sustained for ten to fifteen minutes appears to be enough to produce a measurable difference in most of the available data. Longer or brisker walks tend to help further, but the biggest jump appears to come from simply moving at all rather than remaining seated."},
+        {"type": "heading", "text": "Practical takeaways"},
+        {"type": "list", "items": [
+          "A short walk within thirty minutes of finishing a meal appears more useful for blood sugar than the same walk at another time of day.",
+          "Consistency matters more than intensity; a daily short walk beats an occasional long one.",
+          "This is a complement to, not a replacement for, diet quality, medication where prescribed, and regular activity across the week.",
+          "People managing diagnosed diabetes should discuss any new exercise pattern with their care team, since timing of movement can interact with insulin or other medications."
+        ]},
+        {"type": "paragraph", "text": "None of this suggests morning or evening exercise habits are wrong to keep. The research instead points to an additional, low-effort habit that can sit alongside an existing routine: treating the period right after a meal as a natural cue to stand up and move, even briefly."}
+      ],
+      "references": [
+        "Diabetologia, observational review of post-meal activity and glycaemic response, 2024.",
+        "British Journal of Sports Medicine, meta-analysis of walking timing and postprandial glucose, 2022.",
+        "Diabetes Care, patient guidance on physical activity and glucose management."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The Case for Eating Fewer, Larger Meals of Vegetables",
+      "slug": "fewer-larger-vegetable-meals",
+      "author": "marcus-webb",
+      "date": "2026-07-06",
+      "category": "nutrition",
+      "tags": ["trending"],
+      "description": "Dietitians are revisiting meal frequency advice, arguing that how vegetables are portioned across the day matters as much as how many you eat in total.",
+      "keywords": ["vegetable intake", "meal frequency", "fibre", "plant-based eating", "dietary guidelines"],
+      "image": "images/articles/vegetable-meals.svg",
+      "imageCaption": "Concentrating vegetables into fewer, fuller meals can make daily targets easier to hit.",
+      "readingTime": 5,
+      "content": [
+        {"type": "paragraph", "text": "Most dietary guidelines describe a daily vegetable target, typically several servings spread across the day. In practice, many people find that scattering small amounts of vegetables across three or more meals is harder to sustain than concentrating them into fewer, larger servings."},
+        {"type": "heading", "text": "Where the habit breaks down"},
+        {"type": "paragraph", "text": "Breakfast in particular is a meal where vegetables rarely feature in most households, which means the daily target has to be met entirely across lunch and dinner. When each of those meals is expected to carry only a modest side portion, the arithmetic rarely adds up to the recommended total."},
+        {"type": "paragraph", "text": "Dietitians working with patients on sustainable habit change have started suggesting a different framing: rather than aiming for vegetables at every meal, aim for at least one meal a day where vegetables make up half the plate or more, and let other meals be whatever is realistic."},
+        {"type": "quote", "text": "A single vegetable-forward meal, done consistently, tends to outperform a scattered effort that quietly falls away after a few weeks."},
+        {"type": "heading", "text": "Why this works psychologically"},
+        {"type": "paragraph", "text": "Habit researchers note that behaviours which require a decision at every meal are more fragile than habits anchored to a single, repeatable moment in the day. Designating one meal, often dinner, as the vegetable-heavy meal turns a daily calculation into a single routine that's easier to protect even on busy days."},
+        {"type": "list", "items": [
+          "Pick one meal to anchor the habit to, rather than trying to improve every meal at once.",
+          "Batch-cook a base of roasted or steamed vegetables that can be reheated across several days.",
+          "Treat frozen vegetables as equally valid; nutrient loss is minimal and convenience matters for consistency.",
+          "Build the plate visually: half vegetables, a quarter protein, a quarter starch, rather than counting servings."
+        ]},
+        {"type": "paragraph", "text": "The total weekly vegetable intake still matters, and this approach isn't a shortcut around variety. But for people who find the spread-it-across-every-meal advice unworkable, concentrating effort into one anchor meal is emerging as a more realistic path to the same nutritional target."}
+      ],
+      "references": [
+        "Journal of the Academy of Nutrition and Dietetics, habit formation and vegetable intake, 2023.",
+        "Public Health Nutrition, review of meal patterning and plant food consumption."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Understanding the Anxiety-Sleep Loop, and How to Break It",
+      "slug": "anxiety-sleep-loop",
+      "author": "sara-jensen",
+      "date": "2026-07-05",
+      "category": "mental-health",
+      "tags": ["editors-pick"],
+      "description": "Poor sleep and anxiety reinforce one another. Sleep researchers explain how the cycle forms and where it can realistically be interrupted.",
+      "keywords": ["anxiety", "sleep hygiene", "insomnia", "cognitive behavioral therapy", "stress"],
+      "image": "images/articles/anxiety-sleep.svg",
+      "imageCaption": "Anxiety delays sleep onset, and short sleep in turn heightens next-day anxiety, forming a loop.",
+      "readingTime": 7,
+      "content": [
+        {"type": "paragraph", "text": "Anxiety and poor sleep are frequently discussed as two separate problems, but for many people they function as a single, self-reinforcing loop. Understanding the mechanics of that loop is often more useful than treating either symptom in isolation."},
+        {"type": "heading", "text": "How the loop forms"},
+        {"type": "paragraph", "text": "Anxiety activates the body's threat-response system, raising heart rate, muscle tension, and alertness, all of which work directly against the physiological state needed to fall asleep. Lying awake with a racing mind is, in a very literal sense, the body doing what it evolved to do when it senses danger, even when the danger is a work deadline or a difficult conversation replaying in memory."},
+        {"type": "paragraph", "text": "The following day, short or fragmented sleep reduces activity in the brain regions responsible for regulating emotional response, while increasing activity in the regions responsible for detecting threat. The practical effect is that ordinary stressors feel larger and harder to manage, which raises anxiety again by the time bedtime returns."},
+        {"type": "quote", "text": "Each night the loop runs, it becomes slightly more automatic, which is why early intervention tends to be easier than intervention after months of poor sleep."},
+        {"type": "heading", "text": "Where the loop can be interrupted"},
+        {"type": "paragraph", "text": "Clinical approaches to breaking this cycle rarely target sleep and anxiety as separate problems. Cognitive behavioural therapy for insomnia, one of the more evidence-supported approaches, works partly by addressing the anticipatory anxiety that builds around sleep itself, the worry about not sleeping that becomes its own obstacle to sleeping."},
+        {"type": "list", "items": [
+          "A fixed wake time, held even after a bad night, is one of the more effective single changes for stabilising the sleep-wake cycle.",
+          "Moving planning and worry to an earlier, dedicated point in the evening reduces the chance it surfaces once the lights are off.",
+          "Getting out of bed after roughly twenty minutes of wakefulness prevents the bed itself from becoming associated with frustration.",
+          "Daytime light exposure and physical activity both support the body's natural pressure to sleep at night."
+        ]},
+        {"type": "paragraph", "text": "Occasional poor sleep is not something to over-manage; it is a normal response to a stressful day. The loop becomes worth addressing when it persists for weeks, at which point speaking with a GP or a sleep-trained therapist is a reasonable next step, particularly since insomnia and anxiety disorders are both highly treatable."}
+      ],
+      "references": [
+        "Sleep Medicine Reviews, bidirectional relationship between anxiety and insomnia, 2021.",
+        "American Academy of Sleep Medicine, clinical guideline on CBT-I.",
+        "Nature Human Behaviour, sleep deprivation and next-day emotional reactivity."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Blood Pressure Cuffs at Home: Getting an Accurate Reading",
+      "slug": "home-blood-pressure-accuracy",
+      "author": "marcus-webb",
+      "date": "2026-07-03",
+      "category": "heart-health",
+      "tags": ["popular"],
+      "description": "Home blood pressure monitoring is only useful if the reading is accurate. A cardiac nurse explains the common mistakes that skew results.",
+      "keywords": ["blood pressure monitor", "hypertension", "home monitoring", "cardiovascular health"],
+      "image": "images/articles/blood-pressure.svg",
+      "imageCaption": "Cuff position, posture, and timing all influence how accurate a home reading is.",
+      "readingTime": 5,
+      "content": [
+        {"type": "paragraph", "text": "Home blood pressure monitors have become common enough that many people now track their own numbers between doctor visits. That data is only useful, however, if the readings are taken consistently and correctly, and small errors in technique can shift a reading by ten points or more."},
+        {"type": "heading", "text": "The setup matters as much as the device"},
+        {"type": "paragraph", "text": "A cuff placed over clothing, an arm left unsupported, or a back without support against a chair can each independently raise a reading. Crossed legs, a full bladder, and talking during measurement are also common and underappreciated sources of error."},
+        {"type": "quote", "text": "The most accurate reading is a boring one: seated, back supported, feet flat, arm at heart height, and silence for the full minute."},
+        {"type": "heading", "text": "A reliable routine"},
+        {"type": "list", "items": [
+          "Sit quietly for five minutes before measuring, rather than taking a reading immediately after moving around.",
+          "Support the arm on a table so the cuff sits at roughly heart height, not lower in the lap.",
+          "Keep both feet flat on the floor with the back supported; avoid crossing your legs.",
+          "Avoid caffeine, exercise, and smoking in the thirty minutes beforehand.",
+          "Take two readings a minute apart and record both rather than relying on a single number."
+        ]},
+        {"type": "paragraph", "text": "Timing also matters for tracking trends. Measuring at roughly the same time each day, such as morning and evening, gives a more useful picture than sporadic readings taken whenever a device happens to be nearby. A single high reading is rarely a cause for alarm on its own; a pattern of elevated readings across several days is the signal worth bringing to a doctor."}
+      ],
+      "references": [
+        "American Heart Association, guidance on accurate home blood pressure measurement.",
+        "Hypertension, effect of posture and arm position on blood pressure readings."
+      ]
+    },
+    {
+      "id": 5,
+      "title": "What Actually Happens to Skin During a Sunburn",
+      "slug": "sunburn-skin-biology",
+      "author": "priya-nair",
+      "date": "2026-07-01",
+      "category": "skin-care",
+      "tags": [],
+      "description": "A sunburn is not simply a change in colour. Here is what is happening beneath the surface, and why the redness takes hours to appear.",
+      "keywords": ["sunburn", "UV damage", "skin repair", "sun protection", "SPF"],
+      "image": "images/articles/sunburn.svg",
+      "imageCaption": "Sunburn redness typically peaks twelve to twenty-four hours after exposure, well after the damage has been done.",
+      "readingTime": 4,
+      "content": [
+        {"type": "paragraph", "text": "A sunburn is often treated as a cosmetic inconvenience, something that fades in a few days and is quickly forgotten. Underneath the redness, though, is a fairly dramatic repair process, and understanding it explains why sunburn takes hours to show up and why prevention matters more than treatment."},
+        {"type": "heading", "text": "Damage before the redness"},
+        {"type": "paragraph", "text": "Ultraviolet radiation damages DNA inside skin cells within minutes of exposure. The visible redness that follows is not the damage itself but the immune system's response to it, blood vessels widening and immune cells arriving to help clear out cells too damaged to repair. That response typically peaks between twelve and twenty-four hours after exposure, which is why a sunburn often looks and feels worse the next morning than it did at the beach."},
+        {"type": "heading", "text": "Peeling is a feature, not a malfunction"},
+        {"type": "paragraph", "text": "Skin cells with irreparable DNA damage are programmed to die rather than risk becoming cancerous, and the visible peeling that follows a bad sunburn a few days later is the body shedding that damaged layer. It is uncomfortable, but it is the skin doing exactly what it is supposed to do."},
+        {"type": "list", "items": [
+          "Cool compresses and fragrance-free moisturiser support comfort but do not undo the underlying damage.",
+          "Sunburn increases lifetime skin cancer risk with each occurrence, particularly burns in childhood.",
+          "Broad-spectrum SPF 30 or higher, reapplied every two hours outdoors, remains the most effective prevention.",
+          "Severe sunburn with blistering, fever, or dizziness warrants medical attention rather than home care."
+        ]},
+        {"type": "paragraph", "text": "Because the damage happens well before any redness appears, relying on visible burning as a signal to seek shade means protection is always arriving too late. Sunscreen applied before exposure, not after the skin starts to feel warm, is what actually prevents the cellular damage in the first place."}
+      ],
+      "references": [
+        "Journal of Investigative Dermatology, UV-induced DNA damage and cellular response.",
+        "Skin Cancer Foundation, clinical overview of sunburn and long-term risk."
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Folic Acid Before Conception: Why Timing Matters",
+      "slug": "folic-acid-preconception-timing",
+      "author": "sara-jensen",
+      "date": "2026-06-28",
+      "category": "pregnancy",
+      "tags": [],
+      "description": "Folic acid is most protective when started before pregnancy begins. Here is why the neural tube closes earlier than most people expect.",
+      "keywords": ["folic acid", "preconception health", "neural tube defects", "prenatal vitamins"],
+      "image": "images/articles/folic-acid.svg",
+      "imageCaption": "The neural tube closes by around day 28 of pregnancy, often before a person knows they are pregnant.",
+      "readingTime": 4,
+      "content": [
+        {"type": "paragraph", "text": "Folic acid supplementation is standard advice for anyone who might become pregnant, but the reasoning behind the timing is less widely understood than the recommendation itself. The window where folic acid matters most closes earlier than many people expect."},
+        {"type": "heading", "text": "A narrow window"},
+        {"type": "paragraph", "text": "The neural tube, which develops into the brain and spinal cord, forms and closes within the first month of pregnancy, typically by around day twenty-eight after conception. Many people do not know they are pregnant this early, which means folic acid started only after a positive test can arrive after the most critical window has already passed."},
+        {"type": "quote", "text": "By the time a pregnancy test turns positive, the neural tube may already be closing."},
+        {"type": "heading", "text": "Why folic acid specifically"},
+        {"type": "paragraph", "text": "Folate is required for rapid cell division and DNA synthesis, both central to early neural development. Adequate levels around conception are associated with a substantially lower risk of neural tube defects such as spina bifida, which is why public health guidance recommends supplementation begin before conception rather than after."},
+        {"type": "list", "items": [
+          "Standard guidance is 400 micrograms of folic acid daily, started at least one month before trying to conceive.",
+          "Those with a personal or family history of neural tube defects may be advised a higher dose; this should be discussed with a doctor.",
+          "Folate-rich foods such as leafy greens and legumes are supportive but generally not sufficient alone to reach protective levels.",
+          "Supplementation is typically continued through the first trimester."
+        ]},
+        {"type": "paragraph", "text": "For anyone who could become pregnant, even without an active plan to do so, starting or maintaining folic acid supplementation is a low-risk step that keeps the protective window open, since roughly half of pregnancies are not planned at the outset."}
+      ],
+      "references": [
+        "CDC, folic acid recommendations for people who could become pregnant.",
+        "Cochrane Database of Systematic Reviews, folate supplementation and neural tube defects."
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Grip Strength Is a Better Predictor of Healthy Ageing Than You'd Think",
+      "slug": "grip-strength-healthy-ageing",
+      "author": "marcus-webb",
+      "date": "2026-06-25",
+      "category": "fitness",
+      "tags": ["trending"],
+      "description": "Researchers keep finding that a simple grip strength test correlates with long-term health outcomes. Here is what it actually measures.",
+      "keywords": ["grip strength", "muscle mass", "healthy ageing", "resistance training", "sarcopenia"],
+      "image": "images/articles/grip-strength.svg",
+      "imageCaption": "Grip strength is used as a proxy for overall muscle function, not because grip itself is uniquely important.",
+      "readingTime": 5,
+      "content": [
+        {"type": "paragraph", "text": "Grip strength, measured with a simple handheld dynamometer, has become one of the more consistent predictors used in ageing research. It's an unglamorous test, but the correlation between grip strength and broader health outcomes has proven surprisingly durable across large studies."},
+        {"type": "heading", "text": "Why grip, specifically"},
+        {"type": "paragraph", "text": "Grip strength is not tracked because the hands themselves are especially important to long-term health. It's used as a fast, cheap proxy for overall muscle mass and function, which are harder and slower to measure directly. Forearm muscle strength tends to track closely with strength elsewhere in the body, making it a convenient stand-in in large population studies."},
+        {"type": "paragraph", "text": "Total-body muscle mass and strength, in turn, are linked to a wide range of outcomes: mobility and independence in later life, resilience during illness or hospitalisation, and lower rates of falls and fractures. Grip strength is simply the easiest thread to pull on to capture that broader picture."},
+        {"type": "quote", "text": "A low grip strength doesn't cause poor health outcomes; it's a marker of muscle loss, which does."},
+        {"type": "heading", "text": "Building and preserving strength"},
+        {"type": "list", "items": [
+          "Resistance training two to three times a week is the most directly supported way to preserve muscle mass with age.",
+          "Adequate protein intake, spread across meals, supports the muscle-building stimulus from training.",
+          "Muscle mass naturally declines from around the mid-thirties onward without active resistance training to counter it.",
+          "It is never too late to start; strength gains have been documented in resistance training studies well into the ninth decade of life."
+        ]},
+        {"type": "paragraph", "text": "The takeaway isn't that grip strength itself needs training, though grip-specific work like carrying heavy loads or using a hangboard can help those who want it. The more useful signal is what a declining grip strength over time can indicate: a broader loss of muscle that resistance training, at any age, can meaningfully slow or reverse."}
+      ],
+      "references": [
+        "The Lancet, grip strength as a predictor of all-cause mortality across 17 countries.",
+        "Age and Ageing, sarcopenia and functional decline in older adults."
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Prostate Screening After 50: What the Guidelines Actually Say",
+      "slug": "prostate-screening-guidelines",
+      "author": "sara-jensen",
+      "date": "2026-06-22",
+      "category": "mens-health",
+      "tags": [],
+      "description": "PSA testing guidance has shifted over the past decade toward shared decision-making. Here is what that means in practice.",
+      "keywords": ["prostate cancer", "PSA test", "screening guidelines", "men's health checkups"],
+      "image": "images/articles/prostate-screening.svg",
+      "imageCaption": "Current guidance favours an individual conversation over a blanket screening age.",
+      "readingTime": 5,
+      "content": [
+        {"type": "paragraph", "text": "Prostate-specific antigen testing was once recommended broadly for men over fifty, but guidance has shifted meaningfully over the past decade. Most major health bodies now frame PSA testing as a decision to be made individually rather than a default step at a certain age."},
+        {"type": "heading", "text": "Why the guidance changed"},
+        {"type": "paragraph", "text": "The PSA test detects a protein that can be elevated by prostate cancer, but also by non-cancerous conditions such as an enlarged prostate or infection. A meaningful share of elevated results lead to biopsies for cancers that would never have caused symptoms or shortened life, a pattern researchers call overdiagnosis, along with the physical and psychological costs of unnecessary follow-up procedures."},
+        {"type": "quote", "text": "The question shifted from 'should you get tested' to 'what would you do with the result, and does that outweigh the risks of finding out'."},
+        {"type": "heading", "text": "The current approach: shared decision-making"},
+        {"type": "paragraph", "text": "Rather than a fixed recommendation, guidelines now generally suggest a conversation with a doctor starting around age fifty for average-risk men, and earlier, often around forty to forty-five, for those with a family history of prostate cancer or of African ancestry, both of which raise baseline risk."},
+        {"type": "list", "items": [
+          "The conversation should cover personal risk factors, family history, and what the person would want to do with an abnormal result.",
+          "PSA testing is not recommended as a routine screen without this discussion under most current guidelines.",
+          "Men with urinary symptoms should be evaluated regardless of general screening guidance, since symptoms warrant investigation on their own.",
+          "Life expectancy and overall health are relevant to the decision, since treatment carries its own risks and benefits that shift with age."
+        ]},
+        {"type": "paragraph", "text": "The shift toward shared decision-making does not mean PSA testing is discouraged; it means the decision has moved from a default to a personal one, made with a doctor who understands the individual's risk profile and preferences."}
+      ],
+      "references": [
+        "U.S. Preventive Services Task Force, prostate cancer screening recommendation statement.",
+        "American Urological Association, guideline on early detection of prostate cancer."
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Screen Time Guidance for Toddlers Is More Nuanced Than 'Zero Hours'",
+      "slug": "toddler-screen-time-nuance",
+      "author": "priya-nair",
+      "date": "2026-06-19",
+      "category": "childrens-health",
+      "tags": [],
+      "description": "Paediatric guidance on early screen time has moved past a strict cutoff, focusing instead on content and context.",
+      "keywords": ["screen time", "toddler development", "paediatric guidelines", "child development"],
+      "image": "images/articles/toddler-screens.svg",
+      "imageCaption": "Content quality and co-viewing appear to matter as much as total screen minutes.",
+      "readingTime": 5,
+      "content": [
+        {"type": "paragraph", "text": "Guidance on screen time for very young children has often been reduced, in popular discussion, to a single number: zero hours under eighteen months, limited hours after. The full guidance from paediatric bodies is more layered than that headline suggests, and increasingly focuses on how screens are used rather than only how long."},
+        {"type": "heading", "text": "Content and context over raw minutes"},
+        {"type": "paragraph", "text": "Passive, fast-paced content with little narrative structure appears to be where most of the developmental concern is concentrated. Slower-paced, age-appropriate programming, particularly when a parent or caregiver watches alongside the child and talks about what's happening, behaves differently in the research than unattended screen exposure."},
+        {"type": "paragraph", "text": "Video calls with family members are generally treated separately from passive viewing in current guidance, since the interactive, responsive nature of a call resembles face-to-face interaction more than it resembles watching a show."},
+        {"type": "quote", "text": "A parent narrating and responding during a video changes what the child is getting out of that screen time."},
+        {"type": "heading", "text": "What guidance bodies currently recommend"},
+        {"type": "list", "items": [
+          "Under 18 months: screen use limited to video calls with caregivers, avoiding passive solo viewing.",
+          "18 to 24 months: if screens are introduced, high-quality programming watched together with a caregiver is preferred over unattended use.",
+          "2 to 5 years: no more than one hour a day of high-quality content, ideally co-viewed.",
+          "Screens displacing sleep, physical activity, or in-person interaction are a more consistent concern across studies than screen time in isolation."
+        ]},
+        {"type": "paragraph", "text": "None of this is a case for unrestricted screen use; the research broadly supports limiting it. But for parents navigating real-world constraints, the nuance matters: a supervised, high-quality video call with a grandparent and an unattended stretch of fast-cut content are not treated the same in current paediatric guidance, even if both count as screen time on a stopwatch."}
+      ],
+      "references": [
+        "American Academy of Pediatrics, media use guidance for young children.",
+        "World Health Organization, guidelines on physical activity, sedentary behaviour and sleep for children under 5."
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Perimenopause Symptoms Often Start Years Earlier Than Expected",
+      "slug": "perimenopause-early-symptoms",
+      "author": "sara-jensen",
+      "date": "2026-06-15",
+      "category": "womens-health",
+      "tags": ["editors-pick"],
+      "description": "Hormonal shifts associated with perimenopause can begin in the late thirties, well before periods become noticeably irregular.",
+      "keywords": ["perimenopause", "hormonal changes", "menopause symptoms", "women's health"],
+      "image": "images/articles/perimenopause.svg",
+      "imageCaption": "Sleep changes, mood shifts, and cycle changes can appear years before menopause itself.",
+      "readingTime": 6,
+      "content": [
+        {"type": "paragraph", "text": "Perimenopause is commonly associated with the years immediately before periods stop entirely, but hormonal fluctuations behind many of its symptoms can begin considerably earlier, sometimes in the late thirties, well before cycles become visibly irregular."},
+        {"type": "heading", "text": "A gradual, uneven decline"},
+        {"type": "paragraph", "text": "Rather than a steady drop, oestrogen and progesterone levels during perimenopause fluctuate, sometimes sharply, before settling into the lower, more stable levels of menopause. It's this fluctuation, rather than a simple decline, that produces many of the symptoms associated with the transition, including sleep disruption, mood changes, and shifts in cycle length or flow."},
+        {"type": "paragraph", "text": "Because periods can remain fairly regular during the earliest phase of this transition, many people experience symptoms for a year or more before connecting them to hormonal changes, sometimes attributing sleep or mood changes to stress or ageing more generally."},
+        {"type": "quote", "text": "Regular periods do not rule out perimenopause; the hormonal fluctuations often start well before the cycle visibly changes."},
+        {"type": "heading", "text": "Recognising the early signs"},
+        {"type": "list", "items": [
+          "Changes in sleep quality, particularly waking in the early hours, can appear before any change in cycle length.",
+          "Mood changes, including increased irritability or anxiety around certain points in the cycle, are commonly reported.",
+          "Cycle length may shorten before it lengthens, which can be mistaken for a return to a more regular cycle.",
+          "Hot flushes and night sweats often appear later in the transition rather than at the very start."
+        ]},
+        {"type": "paragraph", "text": "There is no single test that definitively diagnoses perimenopause; it is generally identified through a pattern of symptoms and history rather than a hormone level on a given day, since hormone levels can vary significantly even within the same week. A conversation with a doctor is worthwhile for anyone in their late thirties or forties experiencing a new, persistent pattern of sleep, mood, or cycle changes, both to confirm what's happening and to discuss management options."}
+      ],
+      "references": [
+        "The Lancet Diabetes & Endocrinology, hormonal changes across the menopause transition.",
+        "Menopause: The Journal of The Menopause Society, clinical overview of perimenopausal symptoms."
+      ]
+    },
+    {
+      "id": 11,
+      "title": "How Researchers Are Rethinking the 10,000-Step Target",
+      "slug": "rethinking-10000-steps",
+      "author": "marcus-webb",
+      "date": "2026-06-12",
+      "category": "medical-research",
+      "tags": ["popular"],
+      "description": "The 10,000-step figure did not originate from clinical research. Newer studies suggest the real benefit curve looks different.",
+      "keywords": ["step count", "physical activity research", "walking", "activity guidelines"],
+      "image": "images/articles/step-count.svg",
+      "imageCaption": "Health benefits from walking appear to rise steeply at first, then level off well below 10,000 steps for many outcomes.",
+      "readingTime": 6,
+      "content": [
+        {"type": "paragraph", "text": "The 10,000-step target is one of the most widely recognised health benchmarks in the world, but its origin is more marketing than medicine: the figure traces back to a 1960s Japanese pedometer product name rather than a clinical study. Newer research using large step-tracked cohorts has started to map out what the actual benefit curve looks like."},
+        {"type": "heading", "text": "A curve, not a cliff"},
+        {"type": "paragraph", "text": "Large cohort studies tracking step counts against health outcomes, including cardiovascular disease and all-cause mortality, generally find that benefit rises steeply at lower step counts and then flattens well before 10,000. For many outcomes, meaningful risk reduction is already visible somewhere in the 6,000 to 8,000 step range, with further increases producing smaller additional gains."},
+        {"type": "quote", "text": "The steepest part of the curve is between doing very little and doing something moderate, not between doing a lot and doing even more."},
+        {"type": "heading", "text": "Why this matters for how targets are set"},
+        {"type": "paragraph", "text": "A single round number is easy to communicate but can also be discouraging for people far from it, and can undersell the benefit of more modest increases. Researchers studying this data have suggested that public health messaging built around 'more than you're doing now' may motivate more sustained change than a fixed target that feels out of reach."},
+        {"type": "list", "items": [
+          "Some benefit is measurable even in the 4,000 to 5,000 step range compared with very sedentary baselines.",
+          "The exact shape of the curve varies somewhat by age, with older adults showing benefit plateaus at somewhat lower step counts in some studies.",
+          "Pace and intensity appear to add benefit independent of total step count in several analyses.",
+          "10,000 remains a reasonable aspirational target; it simply isn't a clinically derived threshold below which activity 'doesn't count'."
+        ]},
+        {"type": "paragraph", "text": "None of this is an argument against walking more. It's a case for treating any increase in daily movement as meaningful, rather than measuring success only against a marketing figure from six decades ago."}
+      ],
+      "references": [
+        "JAMA Internal Medicine, step count and mortality in a large prospective cohort.",
+        "The Lancet Public Health, dose-response relationship between steps and cardiovascular outcomes."
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Antibiotic Resistance Explained: How Overuse Creates Superbugs",
+      "slug": "antibiotic-resistance-explained",
+      "author": "priya-nair",
+      "date": "2026-06-08",
+      "category": "public-health",
+      "tags": ["breaking"],
+      "description": "Public health officials continue to warn about rising antibiotic resistance. Here is the biology behind how it happens.",
+      "keywords": ["antibiotic resistance", "superbugs", "public health", "infectious disease"],
+      "image": "images/articles/antibiotic-resistance.svg",
+      "imageCaption": "Resistance spreads through selection pressure: surviving bacteria are, by definition, the hardest to kill.",
+      "readingTime": 6,
+      "content": [
+        {"type": "paragraph", "text": "Antibiotic resistance is frequently described in public health warnings without much explanation of the underlying biology. The mechanism, once laid out, is fairly intuitive: it is a direct consequence of how selection pressure works on fast-reproducing populations."},
+        {"type": "heading", "text": "Survival of the least susceptible"},
+        {"type": "paragraph", "text": "A course of antibiotics rarely kills every bacterium in an infection instantly. Bacteria vary slightly in their vulnerability, and the ones that survive longest, whether through a chance mutation or a pre-existing trait, are by definition the ones best equipped to resist that antibiotic. If a course is stopped early or dosed too low, those more resistant survivors are left to multiply, passing their resistance on to an entire new generation."},
+        {"type": "quote", "text": "Every incomplete course of antibiotics is, in effect, a small breeding programme for the bacteria most able to survive it."},
+        {"type": "heading", "text": "Why overuse accelerates the problem"},
+        {"type": "paragraph", "text": "The more often a population of bacteria is exposed to an antibiotic, the more opportunities exist for resistant strains to emerge and spread, which is why unnecessary prescriptions, such as antibiotics given for viral infections they cannot treat, contribute to resistance even when the immediate infection has nothing to do with the drug's future effectiveness. Agricultural use of antibiotics in livestock is a significant contributor by the same mechanism, operating at a much larger scale."},
+        {"type": "list", "items": [
+          "Antibiotics do not work against viral infections such as most colds and flu; taking them anyway contributes to resistance without treating the illness.",
+          "Completing a prescribed course as directed, rather than stopping once symptoms improve, reduces the chance of resistant survivors.",
+          "Resistant bacteria can spread between people independent of who originally took the antibiotic.",
+          "New antibiotic development has slowed considerably since the 1980s, making stewardship of existing drugs more important."
+        ]},
+        {"type": "paragraph", "text": "Public health responses now generally combine two strategies: reducing unnecessary antibiotic use through prescribing guidelines, and investing in surveillance to catch resistant outbreaks early. Individual behaviour, particularly finishing prescribed courses and not requesting antibiotics for viral illness, remains one of the more direct levers available outside clinical and agricultural policy."}
+      ],
+      "references": [
+        "World Health Organization, global report on antibiotic resistance.",
+        "The Lancet, global burden of bacterial antimicrobial resistance."
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Common Cold Medicines: What Actually Shortens the Illness",
+      "slug": "cold-medicine-what-works",
+      "author": "marcus-webb",
+      "date": "2026-06-04",
+      "category": "medicines",
+      "tags": [],
+      "description": "Most over-the-counter cold remedies manage symptoms rather than shorten the illness. Here is what the evidence supports for each.",
+      "keywords": ["cold remedies", "over the counter medicine", "decongestants", "cold and flu"],
+      "image": "images/articles/cold-medicine.svg",
+      "imageCaption": "Most cold treatments target comfort, not the underlying viral infection or its duration.",
+      "readingTime": 5,
+      "content": [
+        {"type": "paragraph", "text": "Pharmacy shelves carry dozens of cold remedies, most implying some degree of cure. Almost none of them shorten a cold; the evidence base for most over-the-counter options points toward symptom relief rather than a faster recovery."},
+        {"type": "heading", "text": "What the common options actually do"},
+        {"type": "paragraph", "text": "Decongestants narrow blood vessels in the nasal passages, reducing swelling and making breathing easier, but they do nothing to the virus itself. Antihistamines in cold formulas mainly reduce runny nose and sneezing. Pain relievers such as paracetamol and ibuprofen reduce fever and aches, again without affecting how long the infection lasts."},
+        {"type": "quote", "text": "Feeling better and recovering faster are two different things, and most cold medicine only offers the first."},
+        {"type": "heading", "text": "The exceptions worth knowing"},
+        {"type": "paragraph", "text": "Zinc lozenges, if started within the first day of symptoms, have some evidence supporting a modestly shortened illness duration, though the effect size is small and study quality varies. Vitamin C shows no consistent benefit once a cold has started, despite its popularity, though regular supplementation in some populations shows a small preventive effect."},
+        {"type": "list", "items": [
+          "Rest, fluids, and time remain the only interventions that reliably shorten most colds, since the illness has to run its natural course.",
+          "Honey has reasonable evidence for reducing cough severity, particularly in children over one year old.",
+          "Antibiotics do not work on colds, which are viral, and taking them anyway contributes to antibiotic resistance without benefit.",
+          "Symptoms lasting beyond ten days, or a high fever, warrant medical review rather than continued self-treatment."
+        ]},
+        {"type": "paragraph", "text": "None of this means over-the-counter cold medicine is pointless; feeling more functional during an illness has real value. It's simply worth knowing that symptom relief and recovery time are separate things, and most products on the shelf are addressing the former."}
+      ],
+      "references": [
+        "Cochrane Database of Systematic Reviews, zinc for the common cold.",
+        "BMJ Clinical Evidence, review of over-the-counter cold and flu treatments."
+      ]
+    },
+    {
+      "id": 14,
+      "title": "The Fibre Gap: Why Most People Eat Half the Recommended Amount",
+      "slug": "the-fibre-gap",
+      "author": "sara-jensen",
+      "date": "2026-05-30",
+      "category": "healthy-living",
+      "tags": ["popular"],
+      "description": "Dietary fibre intake falls well short of guidelines in most populations. Here is why the gap is so persistent and how to close it gradually.",
+      "keywords": ["dietary fibre", "gut health", "whole grains", "digestive health"],
+      "image": "images/articles/fibre-gap.svg",
+      "imageCaption": "Most adults get roughly half the fibre recommended by national dietary guidelines.",
+      "readingTime": 5,
+      "content": [
+        {"type": "paragraph", "text": "Dietary fibre is one of the more consistently under-consumed nutrients across national surveys, with most adults getting roughly half of the recommended daily amount. Unlike many nutrient gaps, this one persists across income levels and dietary patterns, suggesting the barrier is more structural than a simple lack of awareness."},
+        {"type": "heading", "text": "Why fibre is easy to miss"},
+        {"type": "paragraph", "text": "Fibre is concentrated in whole grains, legumes, fruits, and vegetables, food categories that require more preparation than the refined, processed alternatives that dominate convenient eating. Refining grains removes the bran and germ, along with most of the fibre, in exchange for a longer shelf life and softer texture, a trade-off built into much of the modern food supply."},
+        {"type": "quote", "text": "The gap isn't really about willpower; it's about which foods are fastest to prepare and longest to keep on a shelf."},
+        {"type": "heading", "text": "Why it matters"},
+        {"type": "paragraph", "text": "Fibre feeds the beneficial bacteria in the gut, supports regular digestion, and slows the absorption of sugar into the bloodstream, contributing to more stable blood sugar after meals. Higher fibre intake is also associated with lower rates of cardiovascular disease and colorectal cancer in large population studies, though these associations are harder to prove causally than the more immediate digestive effects."},
+        {"type": "list", "items": [
+          "Swapping refined grains for whole-grain versions is often the single largest lever, since grains make up a large share of daily intake for most people.",
+          "Leaving skins on fruits and vegetables where edible preserves a meaningful share of their fibre content.",
+          "Legumes such as beans and lentils are among the most fibre-dense foods available and keep well in a pantry.",
+          "Increasing fibre gradually, with adequate water intake, reduces the digestive discomfort that can come with a sudden jump."
+        ]},
+        {"type": "paragraph", "text": "Closing the fibre gap rarely requires a specialised diet. For most people it's a matter of a handful of consistent swaps, whole grain instead of refined, a portion of legumes a few times a week, fruit with the skin on, rather than a wholesale change to how they eat."}
+      ],
+      "references": [
+        "American Journal of Clinical Nutrition, national fibre intake survey data.",
+        "The Lancet, dietary fibre intake and cardiovascular and cancer outcomes, systematic review."
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Why Some Diseases Are Called 'Silent' and What That Means for You",
+      "slug": "silent-diseases-explained",
+      "author": "marcus-webb",
+      "date": "2026-05-27",
+      "category": "diseases",
+      "tags": [],
+      "description": "Conditions like hypertension and early kidney disease are often called silent because they progress without symptoms. Here is why that happens.",
+      "keywords": ["silent disease", "chronic disease", "early detection", "asymptomatic conditions"],
+      "image": "images/articles/silent-disease.svg",
+      "imageCaption": "Silent diseases often damage organs gradually, well before any symptom appears.",
+      "readingTime": 5,
+      "content": [
+        {"type": "paragraph", "text": "Certain conditions, high blood pressure, early kidney disease, and some liver conditions among them, are routinely described as silent. The term isn't a figure of speech; it reflects a real biological pattern where meaningful organ damage can accumulate long before a person notices anything is wrong."},
+        {"type": "heading", "text": "Why symptoms lag behind damage"},
+        {"type": "paragraph", "text": "Many organs, the kidneys and liver in particular, have substantial reserve capacity, meaning they can continue functioning normally even after a significant portion of their tissue is damaged. Symptoms tend to appear only once that reserve is largely used up, which in slow-progressing conditions can take years or decades."},
+        {"type": "paragraph", "text": "High blood pressure follows a related but distinct pattern: the pressure itself typically causes no sensation, since blood vessels don't have pain receptors tuned to detect elevated pressure. The damage it causes, to blood vessels, the heart, and the kidneys, accumulates silently until it eventually produces a symptom, sometimes a serious one, such as a stroke or heart attack."},
+        {"type": "quote", "text": "By the time a silent condition produces a symptom, it has often already been progressing for years."},
+        {"type": "heading", "text": "What this means practically"},
+        {"type": "list", "items": [
+          "Regular screening, rather than waiting for symptoms, is the primary way silent conditions are caught early.",
+          "Blood pressure, blood glucose, and basic kidney and liver function tests are among the most useful routine screens for this category of condition.",
+          "Family history is a meaningful factor in deciding how early and how often to screen for a given condition.",
+          "A lack of symptoms should not be interpreted as a lack of risk for these particular conditions."
+        ]},
+        {"type": "paragraph", "text": "The practical lesson from silent diseases isn't to worry constantly, but to treat routine screening, rather than symptom-watching, as the primary defence against this category of condition, since by design they don't give much other warning."}
+      ],
+      "references": [
+        "National Kidney Foundation, chronic kidney disease staging and screening guidance.",
+        "American Heart Association, hypertension as a silent risk factor for cardiovascular disease."
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Heart Rate Variability: What Your Wearable Is Actually Measuring",
+      "slug": "heart-rate-variability-explained",
+      "author": "priya-nair",
+      "date": "2026-05-22",
+      "category": "heart-health",
+      "tags": ["trending"],
+      "description": "Heart rate variability has become a popular wearable metric. Here is what it reflects physiologically and how much weight to give it.",
+      "keywords": ["heart rate variability", "HRV", "wearables", "autonomic nervous system", "recovery"],
+      "image": "images/articles/hrv.svg",
+      "imageCaption": "HRV reflects the balance between the body's stress response and its recovery response.",
+      "readingTime": 6,
+      "content": [
+        {"type": "paragraph", "text": "Heart rate variability, or HRV, has become one of the flagship metrics on modern fitness wearables, often presented as a single recovery score. The underlying measurement is more specific than the simplified dashboard number suggests, and worth understanding on its own terms."},
+        {"type": "heading", "text": "What HRV actually measures"},
+        {"type": "paragraph", "text": "A healthy heart does not beat at perfectly even intervals; the tiny variations between consecutive beats, measured in milliseconds, are what HRV quantifies. Those variations are governed largely by the autonomic nervous system, specifically the ongoing balance between its sympathetic branch, associated with alertness and stress, and its parasympathetic branch, associated with rest and recovery."},
+        {"type": "paragraph", "text": "Generally, higher HRV reflects a nervous system with more flexibility, able to shift readily between stress response and recovery, while lower HRV is often seen alongside fatigue, illness, poor sleep, or high stress, since the sympathetic branch tends to dominate more consistently under those conditions."},
+        {"type": "quote", "text": "HRV is less a fitness score than a window into how much your nervous system has had to work lately."},
+        {"type": "heading", "text": "How much weight to give a single number"},
+        {"type": "list", "items": [
+          "HRV varies significantly between individuals; comparing your number to someone else's is not meaningful.",
+          "Trend over time, tracked against your own baseline, is far more informative than any single day's reading.",
+          "Alcohol, illness, poor sleep, and intense training in the prior 24 hours can all lower HRV independent of overall fitness.",
+          "A single low reading is not a diagnosis of anything; a sustained downward trend over one to two weeks is more worth attention."
+        ]},
+        {"type": "paragraph", "text": "Wearables have made HRV accessible in a way it never was before, which is genuinely useful, but the number is best treated as one input into how you're managing stress, sleep, and recovery, rather than as a verdict on any individual day."}
+      ],
+      "references": [
+        "Frontiers in Public Health, heart rate variability as a marker of autonomic function.",
+        "European Journal of Applied Physiology, HRV and training load monitoring in athletes."
+      ]
+    }
+  ]
+}

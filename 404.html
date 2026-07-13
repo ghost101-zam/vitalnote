@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found — VitalNote</title>
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <div class="container not-found">
+    <div class="code">404</div>
+    <h1>This page took a wrong turn</h1>
+    <p>The page you're looking for doesn't exist, may have been moved, or the link might be broken.</p>
+    <a class="btn" href="index.html">Back to homepage</a>
+  </div>
+
+  <section class="page-section container">
+    <div class="section-heading"><h2>Popular Articles</h2></div>
+    <div class="card-grid cols-3" id="fallback-grid"></div>
+  </section>
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+<script>
+  renderHeader(null);
+  renderFooter();
+  window.pageInit = function (SiteData) {
+    const popular = SiteData.getArticlesByTag("popular");
+    Render.mountCards("fallback-grid", (popular.length ? popular : SiteData.data.articles).slice(0, 3));
+  };
+</script>
+</body>
+</html>

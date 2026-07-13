@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#DEDBD0"/>
+  <path d="M0,300 L280,300 L320,300 L350,120 L400,460 L440,60 L470,300 L800,300" fill="none" stroke="#8C99A6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="400" y="330" font-family="'IBM Plex Mono', monospace" font-size="18" fill="#5B6672" text-anchor="middle">IMAGE UNAVAILABLE</text>
+</svg>

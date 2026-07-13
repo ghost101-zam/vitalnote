@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — VitalNote</title>
+<meta name="description" content="Get in touch with the VitalNote editorial team.">
+<link rel="canonical" href="https://www.vitalnote.example/contact.html">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Contact</span></nav>
+  </div>
+
+  <div class="page-title-block container">
+    <div class="eyebrow">Contact</div>
+    <h1>Get in touch</h1>
+  </div>
+
+  <section class="page-section container">
+    <div class="contact-grid">
+      <div>
+        <form id="contact-form" aria-label="Contact form">
+          <div class="field-group">
+            <label for="c-name">Name</label>
+            <input type="text" id="c-name" name="name" required>
+          </div>
+          <div class="field-group">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" name="email" required>
+          </div>
+          <div class="field-group">
+            <label for="c-subject">Subject</label>
+            <select id="c-subject" name="subject">
+              <option>General inquiry</option>
+              <option>Story tip</option>
+              <option>Correction request</option>
+              <option>Advertising</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send message</button>
+          <p class="form-status" id="contact-status"></p>
+        </form>
+      </div>
+      <div>
+        <div class="contact-info-item">
+          <div class="ci-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+          <div><h4>Editorial</h4><p>editorial@vitalnote.example</p></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2Z"/></svg></div>
+          <div><h4>Corrections</h4><p>corrections@vitalnote.example</p></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21c0-4 4-6 9-6s9 2 9 6"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div><h4>Advertising</h4><p>ads@vitalnote.example</p></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div><h4>Response time</h4><p>We typically reply within two business days.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+<script>
+  renderHeader(null);
+  renderFooter();
+  window.pageInit = function () {};
+
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    document.getElementById("contact-status").textContent = "Thanks — your message has been noted. We'll reply soon.";
+    document.getElementById("contact-status").classList.add("success");
+    this.reset();
+  });
+</script>
+</body>
+</html>

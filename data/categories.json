@@ -1,0 +1,19 @@
+{
+  "categories": [
+    { "slug": "nutrition", "name": "Nutrition", "description": "Food, diet patterns, and what the evidence says about eating well.", "color": "#0F7B6C" },
+    { "slug": "fitness", "name": "Fitness", "description": "Exercise science, training, and movement for long-term health.", "color": "#2E6F9E" },
+    { "slug": "mental-health", "name": "Mental Health", "description": "Mood, stress, sleep, and the science of psychological wellbeing.", "color": "#7A5FB0" },
+    { "slug": "heart-health", "name": "Heart Health", "description": "Cardiovascular health, blood pressure, and heart disease prevention.", "color": "#C4453A" },
+    { "slug": "diabetes", "name": "Diabetes", "description": "Blood sugar management, prevention, and metabolic health.", "color": "#B8862B" },
+    { "slug": "womens-health", "name": "Women's Health", "description": "Reproductive health, hormones, and conditions specific to women.", "color": "#B0568C" },
+    { "slug": "mens-health", "name": "Men's Health", "description": "Screening, hormones, and conditions specific to men.", "color": "#3F6B4F" },
+    { "slug": "childrens-health", "name": "Children's Health", "description": "Paediatric health, development, and family care.", "color": "#3B87A6" },
+    { "slug": "pregnancy", "name": "Pregnancy", "description": "Preconception, prenatal care, and early parenthood.", "color": "#C77B9E" },
+    { "slug": "skin-care", "name": "Skin Care", "description": "Dermatology, sun protection, and skin health.", "color": "#C48A3D" },
+    { "slug": "healthy-living", "name": "Healthy Living", "description": "Everyday habits that support long-term health.", "color": "#4F8F5B" },
+    { "slug": "diseases", "name": "Diseases", "description": "Conditions explained clearly, from common to complex.", "color": "#8C4A3D" },
+    { "slug": "medicines", "name": "Medicines", "description": "How common medicines and treatments actually work.", "color": "#4A6FA5" },
+    { "slug": "medical-research", "name": "Medical Research", "description": "New studies and findings, explained without the hype.", "color": "#5C6470" },
+    { "slug": "public-health", "name": "Public Health", "description": "Population health, policy, and disease prevention at scale.", "color": "#2E7D6B" }
+  ]
+}

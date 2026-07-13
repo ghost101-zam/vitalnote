@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Author — VitalNote</title>
+<meta name="description" id="meta-description" content="VitalNote author profile.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" id="canonical-link" href="https://www.vitalnote.example/author.html">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb" id="breadcrumbs"></nav>
+  </div>
+
+  <div class="page-title-block container" id="author-block">
+    <p style="color:var(--muted);padding:40px 0;">Loading author…</p>
+  </div>
+
+  <section class="page-section container">
+    <div class="section-heading"><h2>Articles by this author</h2></div>
+    <div class="card-grid" id="author-articles"></div>
+  </section>
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+<script>
+  renderHeader(null);
+  renderFooter();
+
+  window.pageInit = function (SiteData) {
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get("author");
+    const author = slug ? SiteData.getAuthor(slug) : null;
+    const block = document.getElementById("author-block");
+
+    if (!author) {
+      block.innerHTML = `<h1>Author not found</h1><p><a href="index.html">Return home</a>.</p>`;
+      return;
+    }
+
+    document.title = author.name + " — VitalNote";
+    document.getElementById("meta-description").setAttribute("content", author.bio);
+    document.getElementById("canonical-link").setAttribute("href", "https://www.vitalnote.example/author.html?author=" + author.slug);
+    document.getElementById("breadcrumbs").innerHTML = `<a href="index.html">Home</a><span class="sep">/</span><span>${author.name}</span>`;
+
+    block.innerHTML = `
+      <div class="author-header">
+        <img src="${author.avatar}" alt="${Render.escapeAttr(author.name)}">
+        <div>
+          <div class="eyebrow">Author</div>
+          <h1 style="margin-top:6px;">${author.name}</h1>
+          <p class="a-title">${author.title}</p>
+        </div>
+      </div>
+      <p class="a-bio">${author.bio}</p>
+    `;
+
+    const articles = SiteData.data.articles.filter(a => a.author === author.slug);
+    Render.mountCards("author-articles", articles);
+  };
+</script>
+</body>
+</html>
